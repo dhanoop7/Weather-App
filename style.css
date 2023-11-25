@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Montserrat:wght@100&display=swap');
+
+
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(/wallhaven-6krv17_1920x1080.png);
+  
+}
+
+/* container styling */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2196F3;
+  width: 500px;
+  height: 490px;
+  position: absolute;
+  left: 35%;
+  top: 14%;
+  background:transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 22px;
+  backdrop-filter: blur(10px);
+}
+
+.heading{
+  font-size: 50px;
+  color: white;
+}
+.head{
+  font-weight: 600;
+  color: white;
+}
+
+/* box-1 styling */
+.box-1{
+  display: flex;
+  flex-direction: row;
+  gap: 27px;
+}
+
+.input {
+  border: 2px solid transparent;
+  width: 21em;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.input:hover,
+.input:focus {
+  border: 2px solid #4A9DEC;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
+.animated-button {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  background-color:antiquewhite;
+  border-radius: 100px;
+  font-weight: 600;
+  color: black;
+  box-shadow: 0 0 0 2px #ffffff20;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #2196F3;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 5px #2195f360;
+  color: #ffffff;
+}
+
+.animated-button:active {
+  scale: 0.95;
+}
+
+.animated-button:hover span:last-child {
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+}
+
+
+
+
+
+/* /box-2 styling */
+.box-2{
+  display: flex;
+  flex-direction: row;
+  gap: 78px;
+}
+
+.box-2-degree h1{
+  font-size: 70px;
+  color: white;
+}
+
+.box-2-degree p{
+  margin-top: -40px;
+  color: white;
+
+}
+
+.box-2-tempicon img{
+  width: 155px;
+  margin-top: 44px;
+}
+
+/* box 3 styling */
+
+.box-3{
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+}
+
+.box-3-windspd{
+  text-align: center;
+  color: white;
+  font-size: large;
+}
+
+
+.box-3-windspd img{
+  width: 74px;
+}
+
+
+.box-3-humidity{
+  text-align: center;
+  color: white;
+  font-size: large;
+  
+}
+.box-3-humidity img{
+  width: 74px;
+}
